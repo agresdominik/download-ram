@@ -65,7 +65,7 @@ Check what name was assigned to your new RAM (e.g. in this example `/var/swap/sw
 ```bash 
 $ swapon --show
 NAME                TYPE        SIZE  USED  PRIO
-/var/swap/swapfile0 partition   4G    0B    -2
+/var/swap/swapfile0 file        4G    0B    -2
 ```
 
 And remove with the following commands:
