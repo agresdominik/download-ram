@@ -100,6 +100,8 @@ Any effects (good, bad, or spectacularly unfortunate) that result from running t
 
 By using this repository, you acknowledge that the author is not responsible for any data loss, downtime, misconfiguration, or other issues caused by running these scripts. :)
 
+Inspired by: https://downloadmoreram.com/
+
 ## Tested on:
 
 - Debian 13
