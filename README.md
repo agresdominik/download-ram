@@ -71,8 +71,8 @@ NAME                TYPE        SIZE  USED  PRIO
 And remove with the following commands:
 
 ```bash 
-$ sudo swapoff /var/swap/swapfile0
-$ sudo rm /var/swap/swapfile0
+sudo swapoff /var/swap/swapfile0
+sudo rm /var/swap/swapfile0
 ```
 
 And !!IMPORTANT!! delete the entry with the same name from fstab:
