@@ -12,6 +12,23 @@ That is why you can use this script to automate the downloading and installing o
 
 ## Installation
 
+### Via Homebrew (Linux)
+
+Add the tap and install:
+
+```bash
+brew tap agresdominik/repo https://github.com/agresdominik/repo
+brew install download-ram
+```
+
+Run the script:
+
+```bash
+sudo $(which download-ram)
+```
+
+### Manual
+
 Clone the repository:
 
 ```bash 
@@ -38,6 +55,7 @@ Please select how much RAM you want to download:
 1) 4GiB of RAM
 2) 8GiB of RAM
 3) 16GiB of RAM
+4) Custom amount
 Plese note you need at least the chosen amount of space on your drive + 4GiB
 
 > 1
