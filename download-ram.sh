@@ -125,10 +125,11 @@ echo "Please select how much RAM you want to download:"
 echo "1) 4GiB of RAM"
 echo "2) 8GiB of RAM"
 echo "3) 16GiB of RAM"
+echo "4) Custom amount"
 echo "Plese note you need at least the chosen amount of space on your drive + 4GiB"
 echo ""
 
-read -r -p "Enter your choice (1-3): " choice
+read -r -p "Enter your choice (1-4): " choice
 
 case "$choice" in
   1)
@@ -139,6 +140,14 @@ case "$choice" in
     ;;
   3)
     value=16
+    ;;
+  4)
+    read -r -p "Enter a custom amount in GiB (1-16): " custom
+    if [[ ! "$custom" =~ ^[0-9]+$ ]] || (( custom < 1 || custom > 16 )); then
+      echo "Invalid amount. Please enter a whole number between 1 and 16."
+      exit 1
+    fi
+    value=$custom
     ;;
   *)
     echo "Invalid choice."
